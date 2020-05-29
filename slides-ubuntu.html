@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="wN9wze+fURmswjYqyK5cT4fWkaIp+8deXLtAJmXEshO2bk6/ybrg0js5//N06/xSoV6Ogb4dHMJo/n9c4SJ8Lw==" />
+<meta name="csrf-token" content="Fs9FJue8npUibwq5BY+ha4cp+vPhsTqfj6xJ4zBXyshgfntUwZkvXrWUw2C5ygF2oaHl0HZX4QO76XaZtLEE9A==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -418,13 +418,130 @@
 </tbody></table></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 80px; top: 366.5px;" data-name="text-651d7c" data-block-id="eb9ef1a7cb900a5e5cdb8136fa35e6bf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;">
 <p>Folder / Directory Permissions</p>
-</div></div></section></section>
+</div></div></section><section data-id="20cbc27f5ca99a2a32d758d081238baf"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="64b98ad4712d5cf2c7a75fdbb4797924"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Berechtigungen<span> </span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 120px; width: 800px; left: 80px; top: 140px;" data-name="table-9ec370" data-block-id="0c47fbf6a74c1d3b8c576d20e66d8252"><div class="sl-block-content" style="z-index: 11;" data-table-cols="2" data-table-rows="11"><table><tbody>
+<tr>
+<th>Option</th>
+<th>Definition</th>
+</tr>
+<tr>
+<td>u</td>
+<td>owner</td>
+</tr>
+<tr>
+<td>g</td>
+<td>group</td>
+</tr>
+<tr>
+<td>o</td>
+<td>other</td>
+</tr>
+<tr>
+<td>a</td>
+<td>all (same as ugo)</td>
+</tr>
+<tr>
+<td>x</td>
+<td>execute</td>
+</tr>
+<tr>
+<td>w</td>
+<td>write</td>
+</tr>
+<tr>
+<td>t</td>
+<td>read</td>
+</tr>
+<tr>
+<td>+</td>
+<td>add permission</td>
+</tr>
+<tr>
+<td>-</td>
+<td>remove permission</td>
+</tr>
+<tr>
+<td>=</td>
+<td>set permission</td>
+</tr>
+</tbody></table></div></div></section><section data-id="8e6021469e0fa2b9e460c38e0acd18a0"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="33c0dc68ac15d58375980793e8173066"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Berechtigungen<span> </span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 490px; left: 80px; top: 140px;" data-name="code-1e8b1c" data-block-id="9751be47a5d9fdacc17f09f98b98cc74"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre><code data-line-numbers=""># Add owner execute bit: 
+user@host:/home/user$ chmod u+x file1
+
+# Add other write &amp; execute bit: 
+user@host:/home/user$ chmod o+wx file2
+
+#Remove group read bit: 
+user@host:/home/user$ chmod g-r file3
+
+#Add read, write and execute to everyone: 
+user@host:/home/user$ chmod ugo+rwx file4
+</code></pre></div></div></section><section data-id="582241958dd6790e215c9693c859aed4"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="2d1e4a8570f42dc7cbfbb107a917cf5d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Berechtigungen<span> </span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 120.5px;" data-name="text-c5d71f" data-block-id="6d88683f8e2642dbc73626525263fbc5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>chmod with Numbers</p>
+</div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 120px; width: 800px; left: 80px; top: 166.5px;" data-name="table-3d4938" data-block-id="ff92cb0da6c1ccc6d7dbda59edb86aa7"><div class="sl-block-content" style="z-index: 12;" data-table-cols="2" data-table-rows="7"><table><tbody>
+<tr>
+<th>Options</th>
+<th>Definition</th>
+</tr>
+<tr>
+<td>#--</td>
+<td>owner</td>
+</tr>
+<tr>
+<td>-#-</td>
+<td>group</td>
+</tr>
+<tr>
+<td>--#</td>
+<td>other</td>
+</tr>
+<tr>
+<td>1</td>
+<td>execute</td>
+</tr>
+<tr>
+<td>2</td>
+<td>write</td>
+</tr>
+<tr>
+<td>4</td>
+<td>read</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 120px; width: 800px; left: 80px; top: 542px;" data-name="table-d38c92" data-block-id="c3d0c8f57122e5121a5df41dc7bb2c09"><div class="sl-block-content" style="z-index: 13;"><table><tbody>
+<tr>
+<th>Owner</th>
+<th>Group</th>
+<th>Other</th>
+</tr>
+<tr>
+<td>read &amp; write</td>
+<td>read &amp; write</td>
+<td>read&amp;write&amp;exec</td>
+</tr>
+<tr>
+<td>4+2 = 6</td>
+<td>4+2 = 6</td>
+<td>4+2+1 = 7</td>
+</tr>
+</tbody></table></div></div></section></section>
 			</div>
 		</div>
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":1326308,"username":"krasosu","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ba9444b96e9ef5b04d036a83aca342d9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":5372743,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null,"auto_animate_tutorial_completed":null},"email":"tobias@kraus-ditz.de","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":599229,"storage_limit":262144000},"deck":{"id":1793039,"slug":"ubuntu","title":"Ubuntu","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2020-05-18T09:18:24.700Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/7c666492737297235446ec62ccb056d3/thumb.jpg?1589793516","view_count":0,"user":{"id":1326308,"username":"krasosu","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ba9444b96e9ef5b04d036a83aca342d9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":5372743,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"asphalt-orange","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":24,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1589797140689,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":null,"notes":{}},"user":{"id":1326308,"username":"krasosu","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ba9444b96e9ef5b04d036a83aca342d9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":5372743,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":1326308,"username":"krasosu","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ba9444b96e9ef5b04d036a83aca342d9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":5372743,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null,"auto_animate_tutorial_completed":null},"email":"tobias@kraus-ditz.de","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":599229,"storage_limit":262144000},"deck":{"id":1793039,"slug":"ubuntu","title":"Ubuntu","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2020-05-18T09:18:24.700Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/7c666492737297235446ec62ccb056d3/thumb.jpg?1589793516","view_count":0,"user":{"id":1326308,"username":"krasosu","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ba9444b96e9ef5b04d036a83aca342d9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":5372743,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"asphalt-orange","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":27,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1589797579149,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":null,"notes":{}},"user":{"id":1326308,"username":"krasosu","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/ba9444b96e9ef5b04d036a83aca342d9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":5372743,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
